@@ -1,0 +1,5 @@
+export const useCheckImg = (imgs) => {
+  const res = [];
+  imgs.map((img) => res.push(`${import.meta.env.VITE_BUCKET_URL}/${img}`));
+  return res;
+};

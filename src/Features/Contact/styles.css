@@ -1,0 +1,18 @@
+/* .contactIcon {
+  width: 4vh;
+} */
+
+.card-contact-us {
+  background-color: var(--yellow);
+  color: var(--white);
+}
+
+.contact-us {
+  background-color: var(--graphite);
+}
+
+.container-contact {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  height: 75vh;
+}

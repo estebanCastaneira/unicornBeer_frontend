@@ -1,0 +1,37 @@
+.product-view-bg {
+  background-color: var(--graphite);
+  color: var(--white);
+  padding: 100px;
+}
+
+.addToCartBtn-product {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.selector {
+  font-size: 14px;
+  width: 25%;
+  height: 32px;
+
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .product-view-img {
+    margin-bottom: 50px;
+  }
+}
+
+.cart-img {
+  height: 100px;
+}
+
+.cart-product {
+  display: flex;
+  justify-content: space-between;
+}
+
+i:hover {
+  cursor: pointer;
+}

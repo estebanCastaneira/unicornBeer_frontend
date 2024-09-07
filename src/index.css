@@ -1,0 +1,79 @@
+:root {
+  --green: #8fbd6d;
+  --lightGreen: #c5fd9d;
+
+  --blue: #597ec9;
+  --lightBlue: #6696e3;
+
+  --violet: #554ba0;
+  --lightViolet: #8558c4;
+
+  --orange: #ff9522;
+  --lightOrange: #f3c55a;
+
+  --yellow: #ffc550;
+  --lightYellow: #fed990;
+
+  --darkRed: #ff000d;
+  --red: #ff434d;
+  --lightRed: #f56c6c;
+
+  --white: #ffffff;
+  --lightGrey: #F8F9FA;
+
+  --graphite: #242424;
+  --lightGraphite: #525252;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+.text-orange {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+p,
+label,
+input,
+small,
+button,
+select,
+option,
+li,
+ul,
+ol,
+span,
+.btn {
+  font-family: "Helvetica" !important;
+}
+
+sup {
+  font-size: small;
+}
+
+textarea {
+  resize: none;
+}
+
+.container {
+  min-height: 80vh;
+  /* si lo dejamos min height, eso hace que al menos ocupe ese tamaño, 
+   en caso de requerir más va a ir a tomar más.  
+   Dicho de otro modo si no lo necesita queda en 80, si lo necesita toma más altura y así no pasa por encima de otros elementos.
+   Si notan que la clase es muy requerida por muchos elementos en muchas vistas y "rompe las bolas", evaluemos crear una nueva clase
+   .min-height-80...yo que sé  */
+}
+
+.graphite-background {
+  background-color: var(--lightGraphite);
+  color: var(--white);
+}

@@ -1,0 +1,218 @@
+/* Home Header */
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translate(-50%, -50%) scale(0.5); /* Ajusta el valor de scale para alejar o acercar el video */
+  -moz-transform: translate(-50%, -50%) scale(0.5);
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
+  object-fit: cover;
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("/src//assets/videos/home_header_video.mp4") black no-repeat center center
+      scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+
+.header-logo {
+  height: 500px;
+  opacity: 0.8;
+}
+.our-beers {
+  position: relative;
+  top: -90px;
+  left: 0;
+}
+
+/* FeaturedProduct */
+
+.white-row {
+  height: 50px;
+}
+
+.home-product-img {
+  max-height: 7000px;
+}
+
+.beer-logo {
+  width: 150px;
+}
+
+.beer-description {
+  width: 300px;
+}
+
+.product-text {
+  font-size: 1rem;
+}
+
+.beer-containers {
+  width: 150px;
+}
+
+.product-divider {
+  overflow: hidden;
+  position: relative;
+}
+.product-divider::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 100% 90px;
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="%FFFFF"></path></svg>');
+}
+
+.divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(129% + 1.3px);
+  height: 78px;
+  transform: rotateY(180deg);
+}
+
+.divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(129% + 1.3px);
+  height: 78px;
+  transform: rotateY(180deg);
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .divider-bottom svg {
+    width: calc(129% + 1.3px);
+    height: 75px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .divider-bottom svg {
+    width: calc(129% + 1.3px);
+    height: 75px;
+  }
+}
+
+.divider-top {
+  fill: #ffffff;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .divider-top svg {
+    width: calc(129% + 1.3px);
+    height: 75px;
+  }
+}
+
+.beers-heading {
+  color: var(--lightGraphite);
+  font-size: 2.3rem;
+}
+
+.char {
+  transform: translateY(115px);
+  transition: transform 0.5s;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInBack {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes productAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

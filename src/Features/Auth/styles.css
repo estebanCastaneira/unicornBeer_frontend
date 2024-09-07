@@ -1,0 +1,101 @@
+.uni-icon {
+  width: 4vh;
+  margin: 0 10px 0 0;
+}
+.auth-link {
+  text-decoration: none;
+}
+
+.login-card {
+  background-color: var(--white);
+  color: var(--graphite);
+}
+
+.aside-bgc {
+  background-color: var(--red);
+}
+
+.form-control-auth::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--graphite);
+  opacity: 1; /* Firefox */
+}
+
+.form-control-auth:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--graphite);
+}
+
+.form-control-auth::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--graphite);
+}
+
+.parent_container {
+  background-color: var(--lightGraphite);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#signup-row,
+#login-row,
+#admin-row {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 920px) {
+  #signup-row {
+    width: 900px;
+  }
+}
+
+@media (min-width: 820px) {
+  .parent_container {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-border {
+    border-radius: 5px 0px 0px 5px;
+  }
+}
+
+/** USER ACCOUNT **/
+
+.graphite-background-account {
+  background-color: var(--lightGraphite);
+  color: var(--white);
+  padding-top: 100px;
+}
+
+.account-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-account {
+  background-color: var(--white);
+  color: var(--graphite);
+  padding: 15px;
+  margin-bottom: 1rem;
+}
+
+.heading-orange {
+  color: var(--orange);
+}
+
+.account-order-img {
+  height: 4rem;
+}
+
+.adminInputs {
+  color: rgb(197, 189, 189);
+}

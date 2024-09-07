@@ -1,0 +1,65 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-control:focus {
+  border: none;
+  box-shadow: none;
+}
+.unicornModal {
+  background: rgb(180, 128, 58);
+  background: linear-gradient(
+    13deg,
+    rgba(180, 128, 58, 1) 0%,
+    rgba(253, 238, 29, 0.5821353912353515) 38%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  z-index: 1050;
+}
+
+.oops {
+  color: var(--lightRed);
+  position: absolute;
+  text-align: center;
+  font-size: 1rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 90%;
+}
+.modal-title {
+  position: relative;
+}
+
+.modal-content {
+  border: none;
+  background-color: var(--lightGrey);
+  opacity: 1;
+}
+.enterBtnYes {
+  background-color: var(--green);
+}
+.enterBtnNo {
+  background-color: var(--darkRed);
+}
+.enterBtnYes,
+.enterBtnNo {
+  border: none;
+  padding: 20px;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.9s;
+}
+.enterBtnYes:hover,
+.enterBtnYes:focus {
+  background-color: #dddddd;
+  color: var(--green);
+}
+.enterBtnNo:hover,
+.enterBtnNo:focus {
+  color: var(--darkRed);
+  background-color: rgb(237, 167, 167)
+}

@@ -1,0 +1,28 @@
+.modalBtn {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.modalBtn-Success {
+  background-color: var(--green);
+  padding: 20px;
+  border-radius: 5px;
+}
+.modalBtn-Success:hover {
+  background-color: #dddddd;
+  color: var(--green);
+}
+.modal-pdf {
+  z-index: 9999;
+}
+.orderModal {
+  background: rgb(180, 128, 58);
+  background: linear-gradient(
+    13deg,
+    rgba(180, 128, 58, 1) 0%,
+    rgba(253, 238, 29, 0.5821353912353515) 38%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  z-index: 1050;
+}
